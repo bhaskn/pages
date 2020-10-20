@@ -17,8 +17,9 @@ spec:
         app: pages
     spec:
       containers:
-      - image: bhaskn/pages:config
+      - image: bhaskn/pages:pipeline
         name: pages
+        imagePullPolicy: Always
         ports:
           - containerPort: 8080
         env:

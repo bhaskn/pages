@@ -49,4 +49,15 @@ public class Page {
     public void setContactNumber(String contactNumber) {
         this.contactNumber = contactNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Page{" +
+                "id=" + id +
+                ", businessName='" + businessName + '\'' +
+                ", categoryId=" + categoryId +
+                ", address='" + address + '\'' +
+                ", contactNumber='" + contactNumber + '\'' +
+                '}';
+    }
 }
